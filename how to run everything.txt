@@ -1,0 +1,17 @@
+1) docker compose up
+
+2) Invoke-RestMethod -Method Post -Uri "http://localhost:3000/api/links" -ContentType "application/json" -Body '{"longUrl":"https://google.com"}'
+u do this to get the short key
+
+3)  curl http://localhost:3000/api/links
+do this to check the status
+
+4)curl.exe -i "http://localhost:3000/api/links/0ALy52/redirect"
+the second last term should be replaced with the short key you got in step 2
+
+5) docker exec -it swiftlink-redis-1 redis-cli GET "url:0ALy52"
+replace the "url:your_short key"
+
+6) docker compose run k6
+this does the actual testing
+in the loadtest change the short_key to your short key in line 19
