@@ -14,7 +14,6 @@ SwiftLink is designed for **read-heavy workloads**, where redirect requests sign
 * 📊 Click analytics and traffic insights
 * 🚀 Non-blocking asynchronous click logging
 * 📈 React dashboard with charts and summaries
-* 🐳 Fully Dockerized development environment
 * 🧪 Performance benchmarking using k6
 * 🛡️ Rate limiting and cache stampede protection
 
@@ -73,8 +72,7 @@ Load tested using **k6** with up to **500 concurrent virtual users**.
 | Cache          | Redis                 |
 | Database       | PostgreSQL            |
 | Infrastructure | Docker Compose        |
-| Testing        | k6, curl              |
-| Deployment     | Docker                |
+| Testing        | k6              |
 
 ---
 
